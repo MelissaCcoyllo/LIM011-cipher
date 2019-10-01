@@ -3,13 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div id="Bienvenida">
+      <h1>Bienvenido a Secure Paswords</h1>
+      <input type="text" id="nombre" placeholder="Ingresa tu Nombre"><br>
+      <input type="text" placeholder="Ingresa tu Correo"><br>
+      <button onclick="Inicio"> Inicia sesión</button>
+
+    </div>
+    <div id="Saludo">
+      <p>Hola ingresa la contraseña que deseas cifrar</p><br>
+      <input type="text" id="pasword" placeholder=""><br>
+      <button onclick= "cifrar"> Cifrando</button>
+
+    </div>
+    <div id= "Respuesta">
+      <p>Esta es tu contraseña segura</p><br>
+      <input type="text" id="cifrado" placeholder="">
+      <button onclick="copy"> Copy</button><br>
+      <button onclick="salir"> Salir</button>
+      <button onclick="again"> Otra vez</button>
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </body>
 </html>
