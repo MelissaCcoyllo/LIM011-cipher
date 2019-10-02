@@ -2,29 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cesar Cipher</title>
     
   </head>
   <body>
-    <div id="Bienvenida">
+    <div class="Bienvenida" id="Welcome"> 
       <h1>Bienvenido a Secure Paswords</h1>
-      <input type="text" id="nombre" placeholder="Ingresa tu Nombre"><br>
-      <input type="text" placeholder="Ingresa tu Correo"><br>
-      <button onclick="Inicio"> Inicia sesión</button>
+      <style> @import url('https://fonts.googleapis.com/css?family=Rum+Raisin&display=swap');</style>
+      <input type="text" class="nombre" id= "nombre" placeholder="Ingresa tu Nombre"><br>
+      <input type="text" class="correo" placeholder="Ingresa tu Correo"><br>
+      <button onclick="Inicio" class="inicio1"> Inicia sesión</button>
 
     </div>
-    <div id="Saludo">
+    <div class="Saludo" id="hello" style="display:none">
       <p>Hola ingresa la contraseña que deseas cifrar</p><br>
-      <input type="text" id="pasword" placeholder=""><br>
-      <button onclick= "cifrar"> Cifrando</button>
+      <input type="text" class="pasword" placeholder=""><br>
+      <button onclick="cifrar" class="cifrar1"> Cifrando</button>
+      
 
     </div>
-    <div id= "Respuesta">
+    <div class= "Respuesta" id='answer' style="display: none">
       <p>Esta es tu contraseña segura</p><br>
-      <input type="text" id="cifrado" placeholder="">
-      <button onclick="copy"> Copy</button><br>
-      <button onclick="salir"> Salir</button>
-      <button onclick="again"> Otra vez</button>
+      <input type="text" class="cifrado" placeholder="">
+      <button onclick="copy" class="copiar"> Copy</button><br>
+      <button onclick="salir" class="salir1"> Salir</button>
+      <button onclick="again" class="again1"> Otra vez</button>
 
     </div>
     <script src="cipher.js"></script>

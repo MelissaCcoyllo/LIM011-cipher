@@ -1,0 +1,89 @@
+body{
+ background-image: url("https://images.unsplash.com/35/BIR62RGGjGxN5nrbnzwu_3.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80");
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ background-size: 100%;
+}
+
+h1{
+ font-family: 'Rum Raisin', sans-serif;
+ font-style: normal;
+ font-size: 300%;
+ color: rgb(253, 253, 251);
+ -webkit-text-stroke: 0.3px black;
+}
+
+p{
+ font-family: 'Rum Raisin', sans-serif;
+ font-style: normal;
+ font-size: 300%;
+ color: rgb(253, 253, 251);
+ -webkit-text-stroke: 1.8px black;   
+}
+.Bienvenida{
+ text-align: center
+}
+.Saludo{
+ text-align: center
+}
+.Respuesta{
+ text-align: center
+}
+.inicio1{
+ color: rgb(248, 248, 250);
+ background-color: rgb(106, 106, 211);
+ padding: 10px;
+ border-radius: 10px;
+ -webkit-text-stroke: 0.3px black;  
+ 
+} 
+.nombre{
+    padding: 8px;
+    border-radius: 5px;
+    margin: 6px;
+}
+.correo{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+.pasword{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 45px;  
+}
+.cifrado{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 45px; 
+}
+.cifrar1{
+    color: rgb(248, 248, 250);
+    background-color: rgb(106, 106, 211);
+    padding: 10px;
+    border-radius: 10px;  
+    -webkit-text-stroke: 0.3px black; 
+}
+.copiar{
+    color: rgb(248, 248, 250);
+    background-color: rgb(106, 106, 211);
+    padding: 10px;
+    border-radius: 10px; 
+    -webkit-text-stroke: 0.3px black; 
+}
+.salir1{
+    color: rgb(248, 248, 250);
+    background-color: rgb(106, 106, 211);
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 10px;  
+    margin: 10px;
+    -webkit-text-stroke: 0.3px black; 
+}
+.again1{
+    color: rgb(248, 248, 250);
+    background-color: rgb(106, 106, 211);
+    padding: 10px;
+    border-radius: 10px; 
+    -webkit-text-stroke: 0.3px black; 
+}
