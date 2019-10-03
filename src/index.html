@@ -6,27 +6,46 @@
     
   </head>
   <body>
-    <div class="Bienvenida" id="Welcome"> 
+    <div class="Bienvenida" id="bienvenida1"> 
       <h1>Bienvenido a Secure Paswords</h1>
       <style> @import url('https://fonts.googleapis.com/css?family=Rum+Raisin&display=swap');</style>
       <input type="text" class="nombre" id= "nombre" placeholder="Ingresa tu Nombre"><br>
       <input type="text" class="correo" placeholder="Ingresa tu Correo"><br>
-      <button onclick="Inicio" class="inicio1"> Inicia sesión</button>
+      <button type="Inicio" class="inicio1" id="btn"> Inicia sesión</button>
 
     </div>
-    <div class="Saludo" id="hello" style="display:none">
-      <p>Hola ingresa la contraseña que deseas cifrar</p><br>
-      <input type="text" class="pasword" placeholder=""><br>
-      <button onclick="cifrar" class="cifrar1"> Cifrando</button>
-      
-
+    <div class="Saludo" id="hello">
+      <p> Que deseas hacer:</p><br>
+      <button type="encode()" class="enconde" id="encode1">Codificar</button>
+      <button type="decode()" class="decode" id="decode1">Decodificar</button>
     </div>
-    <div class= "Respuesta" id='answer' style="display: none">
+
+    <div class="YesEncode" id="YesEncode">
+        <p> Ingresa la contraseña que deseas codificar:</p><br>
+      <input type="text" class="pasword" placeholder="Texto"><br>
+      <input type="text" class="offset" placeholder="Coloca # de desplazamiento"><br>
+      <button type="cifrar()" class="cifrar1" id="cifrar"> Cifrando</button>
+    </div>
+
+    <div class= "Respuesta" id='answer'>
       <p>Esta es tu contraseña segura</p><br>
       <input type="text" class="cifrado" placeholder="">
-      <button onclick="copy" class="copiar"> Copy</button><br>
-      <button onclick="salir" class="salir1"> Salir</button>
-      <button onclick="again" class="again1"> Otra vez</button>
+      <button type="salir()" class="salir1" id="salir"> Salir</button>
+      <button type="comienzo()" class="comienzo" id="comienzo1"> Inicio</button>
+
+    </div>
+    <div class="YesDecode" id="YesDecode">
+        <p> Ingresa la contraseña que deseas decodificar:</p><br>
+      <input type="text" class="pasword2" placeholder="Texto"><br>
+      <input type="text" class="offset2" placeholder="Coloca # de desplazamiento"><br>
+      <button type="descifrar()" class="descifrar1" id="descifrar"> Descifrando</button>
+    </div>
+
+    <div class= "Respuesta2" id='answer2'>
+      <p>Esta es tu contraseña descifrada</p><br>
+      <input type="text" class="cifrado" placeholder="">
+      <button type="salir()" class="salir1" id="salir"> Salir</button>
+      <button type="comienzo()" class="comienzo" id="comienzo1"> Inicio</button>
 
     </div>
     <script src="cipher.js"></script>

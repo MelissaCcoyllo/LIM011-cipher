@@ -24,10 +24,24 @@ p{
  text-align: center
 }
 .Saludo{
- text-align: center
+ text-align: center;
+ display: none;
+}
+.YesEncode{
+ text-align: center;
+ display: none;
+}
+.YesDecode{
+ text-align: center;
+ display: none;
 }
 .Respuesta{
- text-align: center
+ text-align: center;
+ display: none;
+}
+.Respuesta2{
+ text-align: center;
+ display: none;
 }
 .inicio1{
  color: rgb(248, 248, 250);
@@ -50,12 +64,28 @@ p{
 .pasword{
     padding: 8px;
     border-radius: 5px;
-    margin-bottom: 45px;  
+    margin-bottom: 25px;  
+}
+.pasword2{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 25px;  
 }
 .cifrado{
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 45px; 
+
+}
+.offset{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.offset2{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 .cifrar1{
     color: rgb(248, 248, 250);
@@ -64,11 +94,11 @@ p{
     border-radius: 10px;  
     -webkit-text-stroke: 0.3px black; 
 }
-.copiar{
+.descifrar1{
     color: rgb(248, 248, 250);
     background-color: rgb(106, 106, 211);
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;  
     -webkit-text-stroke: 0.3px black; 
 }
 .salir1{
@@ -80,10 +110,13 @@ p{
     margin: 10px;
     -webkit-text-stroke: 0.3px black; 
 }
-.again1{
+.comienzo{
     color: rgb(248, 248, 250);
     background-color: rgb(106, 106, 211);
     padding: 10px;
     border-radius: 10px; 
     -webkit-text-stroke: 0.3px black; 
+}
+.hide{
+    display: none;
 }
