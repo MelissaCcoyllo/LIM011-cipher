@@ -31,7 +31,7 @@ decode: (string, offset) => {
           if (asciiPosition2.match(/[a-z]/i)) {
           if (string.charCodeAt(i)>= 65 && string.charCodeAt(i) <= 90) {
  
-          let text2= (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
+          let text2= (string.charCodeAt(i) + 65 - parseInt(offset)) % 26 + 65;
           result2 += String.fromCharCode(text2);
       }
           else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {

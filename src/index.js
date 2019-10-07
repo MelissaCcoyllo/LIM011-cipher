@@ -52,5 +52,3 @@ comienzo2.addEventListener("click",()=>{
     answer2.classList.add("hide");
     hello.classList.remove("hide");       
 });
-
-
