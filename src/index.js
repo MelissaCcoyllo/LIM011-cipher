@@ -8,56 +8,49 @@ const descifrar= document.getElementById("descifrar");
 const salir2= document.getElementById("salir2"); 
 const comienzo2= document.getElementById("comienzo2"); 
 
-bienvenida1.classList.remove("hide");
-hello.classList.add("hide");
-YesEncode.classList.add("hide");
-answer.classList.add("hide");
-YesDecode.classList.add("hide");
-answer2.classList.add("hide");
+btn.addEventListener("click",()=>{
+    bienvenida1.classList.add("hide");
+    hello.classList.remove("hide");
+});
+encode1.addEventListener("click",()=>{
+    hello.classList.add("hide");
+    YesEncode.classList.remove("hide"); 
+});
+decode1.addEventListener("click",()=>{
+    hello.classList.add("hide");
+    YesDecode.classList.remove("hide"); 
+});
+cifrar.addEventListener("click",()=>{
+    YesEncode.classList.add("hide");
+    answer.classList.remove("hide"); 
+    /*rescatando el valor del texto a codificar */
+    let texto1=document.getElementById("texto1").value;
+    let offset3= document.getElementById("offset3").value;
+    document.getElementById("msj-encode").innerHTML=window.cipher.encode(texto1,offset3);
+});    
+salir.addEventListener("click",()=>{
+    answer.classList.add("hide");
+    bienvenida1.classList.remove("hide"); 
+}); 
+comienzo1.addEventListener("click",()=>{
+    answer.classList.add("hide");
+    hello.classList.remove("hide");
+});    
+descifrar.addEventListener("click",()=>{
+    YesDecode.classList.add("hide");
+    answer2.classList.remove("hide"); 
+      /*rescatando el valor del texto a decodificar */
+      let text2=document.getElementById("texto2").value;
+      let offset2=document.getElementById("offset2").value;
+      document.getElementById("msj-decode").innerHTML=window.cipher.decode(text2,offset2);
+});    
+salir2.addEventListener("click",()=>{
+    answer2.classList.add("hide");
+    bienvenida1.classList.remove("hide"); 
+});      
+comienzo2.addEventListener("click",()=>{
+    answer2.classList.add("hide");
+    hello.classList.remove("hide");       
+});
 
-btn.addEventListener("click", Function1);
-encode1.addEventListener("click", Function2);
-decode1.addEventListener("click", Function3);
-cifrar.addEventListener("click", Function4);
-salir.addEventListener("click", Function5);
-comienzo1.addEventListener("click", Function6);
-descifrar.addEventListener("click", Function7);
-salir2.addEventListener("click", Function8);
-comienzo2.addEventListener("click", Function9);
 
-function Function1(){
-bienvenida1.classList.add("hide");
-hello.classList.remove("hide");
-}
-function Function2() {
- hello.classList.add("hide");
- YesEncode.classList.remove("hide");  
- } 
- function Function3() {
- hello.classList.add("hide");
- YesDecode.classList.remove("hide");      
- } 
- function Function4() {
- YesEncode.classList.add("hide");
- answer.classList.remove("hide");   
- }
- function Function5() {
- answer.classList.add("hide");
- bienvenida1.classList.remove("hide");    
- }
- function Function6() {
- answer.classList.add("hide");
- hello.classList.remove("hide");    
- }
- function Function7() {
- YesDecode.classList.add("hide");
- answer2.classList.remove("hide");    
- }
- function Function8() {
- answer2.classList.add("hide");
- bienvenida1.classList.remove("hide");    
- }
- function Function9() {
- answer2.classList.add("hide");
- hello.classList.remove("hide");    
- }
