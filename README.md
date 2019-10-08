@@ -16,15 +16,16 @@ Facilita crear claves seguras para tus cuentas de correo o redes sociales, inclu
 
 ## Prototipo en papel
 
+
+## Prototipo final con Figma
+https://www.figma.com/proto/KDh1eSW3AZxq0rBXiEBCVR/Proyecto-Cesar?node-id=0%3A1&scaling=scale-down
+
 ## Feedback recibido
 
 * Cambiar estido de letra
 * Agrandar los placeholder 
 * Mejorar la vista de los botones
 * Colocar un rectangulo transparente de fondo 
-
-## Prototipo final con Figma
-https://www.figma.com/proto/KDh1eSW3AZxq0rBXiEBCVR/Proyecto-Cesar?node-id=0%3A1&scaling=scale-down
 
 ## Enlace Deploy
 
