@@ -4,12 +4,9 @@ Cifrar y descrifrar palabras o frases.
 ## Vistas
 ![image]
 
-## versión desktop
-![image]
-
 ## Investigacion UX:
 
-### Secure Passwords
+### Nombre de mi proyecto: Secure Passwords
 
 ¿Quienes son los usuarios?
 Publico en general que desee tener contraseñas seguras.
@@ -20,6 +17,11 @@ Facilita crear claves seguras para tus cuentas de correo o redes sociales, inclu
 ## Prototipo en papel
 
 ## Feedback recibido
+
+* Cambiar estido de letra
+* Agrandar los placeholder 
+* Mejorar la vista de los botones
+* Colocar un rectangulo transparente de fondo 
 
 ## Prototipo final con Figma
 https://www.figma.com/proto/KDh1eSW3AZxq0rBXiEBCVR/Proyecto-Cesar?node-id=0%3A1&scaling=scale-down
