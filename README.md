@@ -1,4 +1,4 @@
-# Proyecto Cipher Ceasar
+# Proyecto Cifrado Cesar
 Cifrar y descrifrar palabras o frases.
 
 ## Vistas
