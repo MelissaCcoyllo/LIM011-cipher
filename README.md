@@ -1,11 +1,27 @@
-Debe contener lo siguiente:
+# Proyecto Cipher Ceasar
+Cifrar y descrifrar palabras o frases.
 
-Un título con el nombre de tu proyecto.
-Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-La imagen final de tu proyecto.
-Investigación UX:
-Explicar quiénes son los usuarios y los objetivos en relación con el producto.
-Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
-Luego colocarás la foto de tu primer prototipo en papel.
-Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-Imagen del prototipo final.
+## Vistas
+![image]
+
+### versión desktop
+![image]
+
+## Investigacion UX:
+
+### Secure Passwords
+
+¿Quienes son los usuarios?
+Publico en general que desee tener contraseñas seguras.
+
+¿Como soluciona el problema de los usuarios?
+Facilita crear claves seguras para tus cuentas de correo o redes sociales, incluso para aplicaciones de banca por internet.
+
+### Prototipo en papel
+
+### Feedback recibido
+
+### Prototipo final
+
+## Enlace Deploy
+
