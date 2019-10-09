@@ -14,7 +14,7 @@ Publico en general que desee tener contraseñas seguras.
 Facilita crear claves seguras para tus cuentas de correo o redes sociales, incluso para aplicaciones de banca por internet.
 
 ### Prototipo en papel
-![image]
+![image](https://github.com/MelissaCcoyllo/LIM011-cipher/blob/master/imagenes/prototipado.jpg)
 
 ### Feedback recibido
 
