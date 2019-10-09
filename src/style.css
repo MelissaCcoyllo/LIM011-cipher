@@ -37,15 +37,20 @@ p{
     margin: 6px;
     padding-left: 5%;
     padding-right: 5%;
-
 }
+.nombre::-webkit-input-placeholder {
+    text-align: center;
+}  
 .correo{
     padding: 8px;
     border-radius: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     padding-left: 5%;
     padding-right: 5%;
 }
+.correo::-webkit-input-placeholder {
+    text-align: center;
+}  
 .pasword{
     padding: 8px;
     border-radius: 5px;
