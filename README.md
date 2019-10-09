@@ -1,7 +1,7 @@
 # Nombre de mi proyecto: Secure Passwords
 
 ## Resumen:
-Aplicacion que yaude a crear claves seguras para diferentes cuentas virtuales.
+Aplicacion que ayude a crear claves seguras para diferentes cuentas virtuales.
 
 ## Imagen final de proyecto
 ![image]
