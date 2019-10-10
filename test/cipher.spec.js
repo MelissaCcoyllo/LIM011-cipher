@@ -10,8 +10,8 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       expect(typeof cipher.encode).toBe('function');
     });
-    it('debería retornar "HIJKLMNOPQR" para "ABCDEFGHIJ" con offset 33', () => {
-      // escribe aquí tus test
+    it('debería retornar "HIJKLMNOPQ" para "ABCDEFGHIJ" con offset 33', () => {
+      expect(cipher.encode('ABCDEFGHIJ', 33)).toBe('HIJKLMNOPQ');
     });
   });
 });
@@ -22,9 +22,9 @@ describe('cipher', () => {
 // Si decides agregar soporte para minúsculas descomenta el test a
 // continuación.
 //
-// it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
-//   expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
-// });
+it('debería retornar "hijklmnopq" para "abcdefghij" with offset 33', () => {
+  expect(cipher.encode('abcdefghij', 33)).toBe('hijklmnopq');
+});
 
 // Hacker edition
 //
@@ -33,16 +33,16 @@ describe('cipher', () => {
 // el test a continuación.
 //
 //
-// it('debería retornar " !@" para " !@"', () => {
-//   expect(cipher.encode(33, ' !@')).toBe(' !@');
-// });
-// })
+it('debería retornar " !@" para " !@"', () => {
+  expect(cipher.encode(' !@', 33)).toBe(' !@');
+});
+
 describe('cipher.decode', () => {
   it('debería ser una función', () => {
     expect(typeof cipher.decode).toBe('function');
   });
-  it('debería retornar "ABCDEFGHIJKL" para "HIJKLMNOPQR" con offset 33', () => {
-    // escribe aquí tus test
+  it('debería retornar "ABCDEFGHIJK" para "HIJKLMNOPQR" con offset 33', () => {
+    expect(cipher.decode('HIJKLMNOPQR', 33)).toBe('ABCDEFGHIJK');
   });
   //
   // Hacker edition
@@ -52,9 +52,9 @@ describe('cipher.decode', () => {
   // continuación.
   //
   //
-  // it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
-  //   expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
-  // });
+  it('debería retornar "abcdefghijk" para "hijklmnopqr" with offset 33', () => {
+    expect(cipher.decode('hijklmnopqr', 33)).toBe('abcdefghijk');
+  });
   // Hacker edition
   //
   // [Español]
@@ -62,7 +62,7 @@ describe('cipher.decode', () => {
   // el test a continuación.
   //
   //
-  // it('debería retornar " !@" para " !@"', () => {
-  //   expect(cipher.decode(33, ' !@')).toBe(' !@');
-  // })
+  it('debería retornar " !@" para " !@"', () => {
+    expect(cipher.decode(' !@', 33)).toBe(' !@');
+  });
 });

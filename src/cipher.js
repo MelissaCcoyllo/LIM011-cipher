@@ -1,47 +1,41 @@
 window.cipher = {
   encode: (string, offset) => {
   /* mensaje recibido */
-    let result = '';
-    /* inicio de recorrido de caracteres */
+  /* eslint radix: ["error", "as-needed"] */
+  /* eslint max-len: ["error", { "ignoreComments": true }] */
+    let resultado = '';
+    let letra;
     for (let i = 0; i < string.length; i += 1) {
-      const asciiPosition = string[i];
-      /* Busqueda indistinta a minusculas o mayusculas /[]/expresion regular */
-      if (asciiPosition.match(/[a-z]/i)) {
-        /* condicion para cifrar en mayusculas */
-        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-          /* obtener el numero ASCII con formula */
-          /* eslint radix: ["error", "as-needed"] */ // no permite proporcionar la 10raíz parseInt
-          const text = ((string.charCodeAt(i) - 65 + parseInt(offset)) % 26) + 65;
-          /* convertir el numero ASCII a letra */
-          result += String.fromCharCode(text);
-        }
+      const ascii = string.charCodeAt(i); /* que me devuelva el numero que cuenta con el bucle */
+      if (ascii >= 65 && ascii <= 90) { /* regla de ese numero desde hasta */
+        const cambialo = ((ascii - 65 + parseInt(offset)) % 26) + 65; /* formula para obtener mayusculas */
+        letra = String.fromCharCode(cambialo); /* que lo cambie a letra */
+      } else if (ascii >= 97 && ascii <= 122) {
+        const cambialo = ((ascii - 97 + parseInt(offset)) % 26) + 97; /* formula para obtener minusculas */
+        letra = String.fromCharCode(cambialo); /* que lo cambie a letra */
       } else {
-        result += asciiPosition;
+        letra = string[i]; /* que no considere caracteres */
       }
-    }
-    return result;
+      resultado += letra;
+    } return resultado;
   },
 
   decode: (string, offset) => {
     /* mensaje recibido */
-    let result2 = '';
-    /* inicio de recorrido de caracteres */
+    let resultado2 = '';
+    let letra2;
     for (let i = 0; i < string.length; i += 1) {
-      const asciiPosition2 = string[i];
-      /* Busqueda indistinta a minusculas o mayusculas */
-      if (asciiPosition2.match(/[a-z]/i)) {
-        /* condicion para descifrar en mayusculas */
-        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-          /* obtener el numero ASCII con formula */
-          /* eslint radix: ["error", "as-needed"] */ // no permite proporcionar la 10raíz parseInt
-          const text2 = ((string.charCodeAt(i) + 65 - parseInt(offset)) % 26) + 65;
-          /* convertir el numero ASCII a letra */
-          result2 += String.fromCharCode(text2);
-        }
+      const ascii2 = string.charCodeAt(i);
+      if (ascii2 >= 65 && ascii2 <= 90) {
+        const cambialo = ((ascii2 + 65 - parseInt(offset)) % 26) + 65;
+        letra2 = String.fromCharCode(cambialo);
+      } else if (ascii2 >= 97 && ascii2 <= 122) {
+        const cambialo = ((ascii2 - 97 - parseInt(offset) + 52) % 26) + 97;
+        letra2 = String.fromCharCode(cambialo);
       } else {
-        result2 += asciiPosition2;
+        letra2 = string[i];
       }
-    }
-    return result2;
+      resultado2 += letra2;
+    } return resultado2;
   },
 };
