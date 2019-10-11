@@ -5,16 +5,16 @@ window.cipher = {
   /* eslint max-len: ["error", { "ignoreComments": true }] */
     let resultado = '';
     let letra;
-    for (let i = 0; i < string.length; i += 1) {
-      const ascii = string.charCodeAt(i); /* que me devuelva el numero que cuenta con el bucle */
-      if (ascii >= 65 && ascii <= 90) { /* regla de ese numero desde hasta */
-        const cambialo = ((ascii - 65 + parseInt(offset)) % 26) + 65; /* formula para obtener mayusculas */
+    for (let i = 0; i < string.length; i += 1) { /* bucle */
+      const ascii = string.charCodeAt(i); /* que recorra las letras de acuerdo al bucle */
+      if (ascii >= 65 && ascii <= 90) { /* si cumple rango de numeros en ascii para mayusculas */
+        const cambialo = ((ascii - 65 + parseInt(offset)) % 26) + 65; /* formula para obtener mayusculas con offset */
         letra = String.fromCharCode(cambialo); /* que lo cambie a letra */
-      } else if (ascii >= 97 && ascii <= 122) {
-        const cambialo = ((ascii - 97 + parseInt(offset)) % 26) + 97; /* formula para obtener minusculas */
+      } else if (ascii >= 97 && ascii <= 122) { /* si no es el primero entonces rango de numeros en ascii para minusculas */
+        const cambialo = ((ascii - 97 + parseInt(offset)) % 26) + 97; /* formula para obtener minusculas con offset */
         letra = String.fromCharCode(cambialo); /* que lo cambie a letra */
       } else {
-        letra = string[i]; /* que no considere caracteres */
+        letra = string[i]; /*  y si no cumple las dos primeras entonces es un caracter y no se considera cambio */
       }
       resultado += letra;
     } return resultado;
