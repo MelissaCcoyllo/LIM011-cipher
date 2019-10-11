@@ -1,7 +1,6 @@
 global.window = global;
 require('../src/cipher');
 
-/* global cipher */
 describe('cipher', () => {
   it('debería ser un object', () => {
     expect(typeof cipher).toBe('object');
