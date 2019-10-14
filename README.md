@@ -37,13 +37,13 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ​
 - [x] Diseñar la aplicación pensando y entendiendo al usuario.
 - [x] Crear prototipos para obtener feedback e iterar.
-- [] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 ​
 ### HTML y CSS
 ​
 - [x] Uso correcto de HTML semántico.
 - [x] Uso de selectores de CSS.
-- [] Construir tu aplicación respetando el diseño realizado (maquetación).
+- [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 ​
 ### DOM
 ​
@@ -53,10 +53,10 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ​
 ### Javascript
 ​
-- [] Manipulación de strings.
-- [] Uso de condicionales (if-else | switch).
-- [] Uso de bucles (for | do-while).	
-- [] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [ ] Manipulación de strings.
+- [ ] Uso de condicionales (if-else | switch).
+- [ ] Uso de bucles (for | do-while).	
+- [ ] Uso de funciones (parámetros | argumentos | valor de retorno).
 - [x] Declaración correcta de variables (const & let).
 ​
 ### Testing
@@ -67,5 +67,5 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 - [x] Manejo de repositorios de GitHub (clone | fork | gh-pages).
 ​
 ### Buenas prácticas de desarrollo
-- [] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica).
 - [x] Uso de linter para seguir buenas prácticas (ESLINT).
