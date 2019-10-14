@@ -35,7 +35,7 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ​
 ### UX
 ​
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
+- [SI ] Diseñar la aplicación pensando y entendiendo al usuario.
 - [ ] Crear prototipos para obtener feedback e iterar.
 - [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 ​
