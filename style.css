@@ -98,6 +98,8 @@ footer{
    font-style: normal;
    text-align: center;
    font-size: 120%;
-  -webkit-text-stroke:0.1px black; 
-   color: black;
+   color: white;
+   background-color: black;
+   padding: 10px;
+   margin-left: -10px;
 }

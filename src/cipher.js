@@ -35,7 +35,7 @@ window.cipher = {
       } else {
         letra2 = string[i];
       }
-      resultado2 += letra2;
+      resultado2  = resultado2 + letra2;
     } return resultado2;
   },
 };

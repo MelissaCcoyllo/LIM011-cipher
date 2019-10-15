@@ -7,8 +7,13 @@ const comienzo1 = document.getElementById('comienzo1');
 const descifrar = document.getElementById('descifrar');
 const salir2 = document.getElementById('salir2');
 const comienzo2 = document.getElementById('comienzo2');
+const bienvenida1 = document.getElementById('bienvenida1');
+const hello = document.getElementById('hello');
+const YesEncode = document.getElementById('YesEncode');
+const YesDecode = document.getElementById('YesDecode');
+const answer = document.getElementById('answer');
+const answer2 = document.getElementById('answer2');
 
-/* global bienvenida1, hello, YesEncode, YesDecode, answer, answer2 */
 btn.addEventListener('click', () => {
   bienvenida1.classList.add('hide');
   hello.classList.remove('hide');
