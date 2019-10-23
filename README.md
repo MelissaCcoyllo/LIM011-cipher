@@ -35,14 +35,14 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ​
 ### UX
 ​
-- [x] Diseñar la aplicación pensando y entendiendo al usuario.
+- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
 - [x] Crear prototipos para obtener feedback e iterar.
-- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 ​
 ### HTML y CSS
 ​
-- [x] Uso correcto de HTML semántico.
-- [x] Uso de selectores de CSS.
+- [ ] Uso correcto de HTML semántico.
+- [ ] Uso de selectores de CSS.
 - [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 ​
 ### DOM
