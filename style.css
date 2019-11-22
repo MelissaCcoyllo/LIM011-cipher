@@ -27,7 +27,6 @@ body{
  background-attachment: scroll;
  background-size: 100%;
 }
-
 h1{
  font-family: 'Merriweather', serif;
  font-style: normal;
@@ -36,14 +35,11 @@ h1{
  background-color: transparent;
  z-index: 1;
 } 
-
 p{
  font-family: 'Rum Raisin', sans-serif;
  font-style: normal;
  font-size: 300%;
  color: rgb(253, 253, 251);
-
-
 }
 
 .fondo{
@@ -125,5 +121,4 @@ footer{
     margin-left: -31%;
     margin-top: 3.5%;
     font-family: 'Rum Raisin', sans-serif;
-
 } 
