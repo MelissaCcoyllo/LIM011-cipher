@@ -13,7 +13,8 @@
     <div class = "cajrect trans">
     <div class="centrado" id="bienvenida1">
       <h1>Bienvenido a Secure Passwords</h1>
-      <input type="text" required class="nombre"  placeholder="Ingresa tu Nombre" title="Por favor ingrese su nombre">
+      <form id="miForm" action="">
+      <input type="text" required class="nombre"  placeholder="Ingresa tu Nombre" title="Por favor ingrese su nombre"><br>
       <input type="email" required class="correo"  placeholder="Ingresa tu Correo" title="Por favor ingrese su correo">
       <button type="button" class="fondo" id="btn"> Inicia sesión</button>
 
@@ -35,8 +36,8 @@
     <div class="centrado hide" id="answer">
       <p>Esta es tu contraseña segura</p>
       <div id="msj-encode" class="caja centrado"></div>
-      <button type="button" class="fondo" id="salir"> Salir</button>
-      <button type="button" class="fondo" id="comienzo1"> Vuelve a empezar</button>
+      <button type="reset" class="fondo" id="salir"> Salir</button>
+      <button type="reset" class="fondo" id="comienzo1"> Vuelve a empezar</button>
 
     </div>
     <div class="centrado hide" id="YesDecode">
@@ -49,9 +50,9 @@
     <div class="centrado hide" id="answer2">
       <p>Esta es tu contraseña descifrada</p>
       <div id="msj-decode" class="caja centrado"></div>
-      <button type="button" class="fondo" id="salir2"> Salir</button>
-      <button type="button" class="fondo" id="comienzo2"> Vuelve a empezar</button>
-      
+      <button type="reset" class="fondo" id="salir2"> Salir</button>
+      <button type="reset" class="fondo" id="comienzo2"> Vuelve a empezar</button>
+    </form>
     </div>
     <footer>Creado por Melissa Ccoyllo para Laboratoria @2019 Promo Lim011</footer>
     <script src="cipher.js"></script>
